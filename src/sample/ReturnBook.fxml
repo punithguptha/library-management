@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReturnBookController">
+   <children>
+      <Label layoutX="237.0" layoutY="32.0" prefHeight="22.0" prefWidth="113.0" text="RETURN BOOK">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="122.0" prefHeight="16.0" prefWidth="76.0" text="IssueId" />
+      <Label layoutX="138.0" layoutY="170.0" text="ReturnDate" />
+      <Button layoutX="407.0" layoutY="281.0" mnemonicParsing="false" onAction="#ReturnBookButton" text="Return Book" />
+      <TextField fx:id="IssueIdTextField" layoutX="256.0" layoutY="117.0" promptText="Enter IssueId" />
+      <DatePicker fx:id="ReturnDatePicker" layoutX="256.0" layoutY="165.0" prefHeight="26.0" prefWidth="171.0" promptText="Give ReturnDate" />
+      <Label fx:id="SuccessfulLabel" disable="true" layoutX="119.0" layoutY="286.0" />
+      <Button layoutX="469.0" layoutY="30.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
+   </children>
+</AnchorPane>

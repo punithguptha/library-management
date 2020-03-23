@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewIssuedBooksController">
+   <children>
+      <Label layoutX="224.0" layoutY="31.0" text="VIEW ISSUED BOOKS">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="IssueBookTableView" layoutX="-1.0" layoutY="65.0" prefHeight="335.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="IssueIdTableColumn" prefWidth="75.0" text="IssueID" />
+          <TableColumn fx:id="UserIdTableColumn" prefWidth="99.0" text="UserID" />
+            <TableColumn fx:id="BookIdTableColumn" prefWidth="89.0" text="BookId" />
+            <TableColumn fx:id="IssueDateTableColumn" prefWidth="85.0" text="IssueDate" />
+            <TableColumn fx:id="PeriodTableColumn" prefWidth="82.0" text="Period" />
+            <TableColumn fx:id="ReturnDateTableColumn" prefWidth="95.0" text="ReturnDate" />
+            <TableColumn fx:id="FineTableColumn" prefWidth="74.0" text="Fine" />
+        </columns>
+      </TableView>
+      <Button layoutX="504.0" layoutY="26.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
+   </children>
+</AnchorPane>

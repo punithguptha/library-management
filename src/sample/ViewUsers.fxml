@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewUsersController">
+   <children>
+      <Label layoutX="247.0" layoutY="21.0" prefHeight="24.0" prefWidth="107.0" text="VIEW USERS">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ViewUsersTableView" layoutY="57.0" prefHeight="338.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="UserIdTableColumn" prefWidth="70.0" text="UserId" />
+          <TableColumn fx:id="UserNameTableColumn" prefWidth="238.0" text="UserName" />
+            <TableColumn fx:id="PasswordTableColumn" prefWidth="177.0" text="Password" />
+            <TableColumn fx:id="AdminTableColumn" minWidth="0.0" prefWidth="100.0" text="Admin" />
+        </columns>
+      </TableView>
+      <Button layoutX="483.0" layoutY="20.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
+   </children>
+</AnchorPane>
