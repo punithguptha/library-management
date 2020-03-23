@@ -8,8 +8,8 @@ public class ConnectionClass {
     public Connection connection=null;
     public Connection getConnection(){
         String dbname="librarymanagement";
-        String username="root";
-        String password="Karthik@2602";
+        String username="root";  //Give your username for sql database for the application
+        String password="1234";  //Give in your password for the sql database of the system
         String jdbcurl="jdbc:mysql://localhost/librarymanagement?useSSL=false";
         try {
             Class.forName("com.mysql.jdbc.Driver");
